@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Ayan Saiyed</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a><img src="images/face_pic.jpg" class="face"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                
+                <ul>
+                    <li><a href="#acc">ACCOLADES</a></li>
+                    <li><a href="#abtme">MORE ABOUT ME</a></li>
+                    <li><a href="#soc">SOCIALS</a></li>
+                    <li><a href="#con">CONTACT</a></li>
+                </ul>
+                
+                <section class="banner"></section>
+                <script type="text/javascript">
+                    window.addEventListener("scroll",function()){
+                        var header = document.querySelector(navLinks);
+                        header.classList.toggle("sticky", scrollY>0);
+                    }
+                </script>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    <div class="text-box">
+        <h1>Ayan Saiyed</h1>
+        <p>Hello! My name is Ayan Saiyed. I am a second year student at York University persuing a Bachelor's of Engineering degree in Software Engineering. Welcome to my personal website! This website displays all my accolades, includes my socials if you wish to stay in touch with me, and also a contact page!</p>
+    </div>
+        
+    <!-------------accolades---------->
+    
+    <section class="accolades" id="acc">
+        <h1 class="title">ACCOLADES</h1>
+        <div class="row">
+            <div class="accolades-col">
+                <h3>Education</h3>
+                <p>> BEng in Software Engineering<br>York University | Expected April 2027</p>
+            </div>
+            <div class="accolades-col">
+                <h3>Languages</h3>
+                <p>Java, Python, CSS, JavaScript, HTML, R Language, Matlab, C, Turing</p>
+            </div>
+            <div class="accolades-col">
+                <h3>Experience</h3>
+                <p>> Built an automated plant watering system using Object-Oriented Programming and Arduino board.<br>> Built a personal website using conjuction of HTML, CSS, JavaScript.<br>> Built a Snake game using object-oriented programming in Java<br>> Built a Flappy Bird clone using Python </p>
+            </div>
+            <div class="accolades-col">
+                <h3>Hardware</h3>
+                <p>> Arduino<br>> Microcontrollers<br>> Sensors<br>> Actuators<br>> Breadboards<br>> Circuits<br>> Multimeter, Oscilloscope, Wave Generator</p>
+            </div>
+            <div class="accolades-col">
+                <h3>Relevent Courses</h3>
+                <p>> Software Development Project<br>> Harvard's CS50x<br>> Object-Oriented Programming from sensors and actuators<br>> Advanced Object-Oriented Programming<br>> Data Structures and Algorithms</p>
+            </div>
+            <div class="accolades-col">
+                <h3>Extra Curriculars</h3>
+                <p>> Robotics Club | January 2020 - May 2020<br>> Coding Club | September 2021 - June 2022<br>> Lassonde Blockchain Association Representative | November 2023 - Current</p>
+            </div>
+        </div>
+    </section>
+    
+    <!----------------More About Me----------------------------->
+    <section class="moreAbtMe" id="abtme">
+       <h1 class="title">MORE ABOUT ME</h1>
+        <div class="row">
+            <div class="more-col">
+            </div>
+        <div class="text">
+            <p>Hello! My name is Ayan Saiyed as I mentioned before. Allow me to tell you a little bit more about myself. I was born in India but moved to Canada and was raised here since I was 4. As I grew older I developed a great love and passion for computers and technology. My ice breaker into this industry was video games. As I would play I would always think to my self "how come this game knows how much damage I'm doing to this certain player?" or "why does the game look like the way it does?". I eventually found out programming and software was the recipe to all online wonders of the world today including the games I loved. Since that moment I've wanted to work in this industry and get myself invovled in the creation of these beautiful online architectural masterpieces. I started my coding journey with Turing. An old object-oriented programming language developed in 1982 in my hometown Toronto, Ontario. I built a basic pong type game on that language which then solidified my understanding of how complex and how much time and effort goes into making games; Even miniscule games such as pong. Shortly after I applied to University to greater expand my knowldge for this field and was able to partake in some wonderful courses such as the ones listed above and was able to develop some cool projects like a fully automated plant watering system using Java, building my own website (this website) using HTML, CSS, and JS, a clone of the popular retro game known as "Flappy Bird" using Python, and also a Snake game using principles of OOP and Java! My love for this field is ever expanding and so is my knowldge. I am an enthusiastic, social, adaptive, positive, efficient, sharp, and a superfluous person. Please feel free to contact me via email using the contact me section down below. I hope to stay in touch with you!</p>
+        </div>
+        </div>
+    </section>
+    
+    <!-----------socials------------>
+    <section class="socials" id="soc">
+        <h1 class="title">SOCIALS</h1>
+        <div class="logo">
+            <div class="ig">
+                <a href="https://www.instagram.com/ayan.sydz/"><img src="images/Instagram.png" class="face"></a>
+            </div>
+            <div class="linked">
+                <a href="https://www.linkedin.com/in/ayan-saiyed-b1008029a"><img src="images/linkedin.png" class="face"></a>
+            </div>
+            <div class="git">
+                <a href="https://github.com/AyanASaiyed"><img src="images/github.png" class="face"></a>
+            </div>
+        </div>
+    </section>
+    
+    <!----------CONTACT---------->
+    <section class="contact" id="con">
+        <h1 class="con-tit">CONTACT</h1>
+        <form action="https://formspree.io/f/mbjnrqww" method="POST">
+            <h3>CONTACT ME</h3>
+            <input type="text" name="full" placeholder="Your Full Name" autocomplete="off" required>
+            <input type="email" name="email" placeholder="Your Email" autocomplete="off" required>
+            <textarea rows="5" cols="60" name="message" placeholder="Your Message" autocomplete="off" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+</section>
+    <!-------JavaScript for toggle menu---------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
